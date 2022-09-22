@@ -3,3 +3,7 @@
 # @FileName: main.py
 # @Software: PyCharm
 # @Github    ：sudoskys
+from pathlib import Path
+from utils.DataParse import ReadConfig
+config = ReadConfig().parseFile(str(Path.cwd()) + "/Config/app.toml")
+print(config)
