@@ -4,6 +4,9 @@
 # @Software: PyCharm
 # @Github    ：sudoskys
 from pathlib import Path
-from utils.DataParse import ReadConfig
+from utils.Base import ReadConfig
+from App.Controller import BotRunner
+
 config = ReadConfig().parseFile(str(Path.cwd()) + "/Config/app.toml")
-print(config)
+App = BotRunner(config)
+App.run()
