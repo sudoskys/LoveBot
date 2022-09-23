@@ -3,13 +3,13 @@
 # @FileName: Event.py
 # @Software: PyCharm
 # @Github    ：sudoskys
-async def Switch(bot, message, config):
+async def Text(bot, message, config):
     pass
 
 
-def Start(bot, message, config):
+async def Start(bot, message, config):
     pass
 
 
-def About(bot, message, config):
+async def About(bot, message, config):
     pass
